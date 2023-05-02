@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 
 function EventItem({item1}) {
-    const [like,setLike] = useState(false)
+    // like dislike function
+   const [like,setLike] = useState(false)
    function handleClick(){
     setLike(prev=>!prev)
 }
@@ -9,10 +10,6 @@ function EventItem({item1}) {
   return (
     <div className='con'>
     <div className='like'>
-      {/* <p>{item1.eventname}</p>
-      <p>{item1.location}</p>
-      <img></img>
-      <img src={item1.getimg}></img> */}
       <div className='likeA'>
       <img src={item1.getimg}  className='like1'></img> 
       </div>
