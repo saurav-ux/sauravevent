@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+}
+.like{
+  border: 1px solid gray ;
+  margin-top: 20px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: .3fr 1fr .01fr;
+  grid-template-areas: 
+  "likeA" "like2" "like3";
+}
+.red{
+  color: red;
+}
+.likeA{
+  width: 100%;
+}
+.like1{
+  width: 100%;
+  border-radius: 10px;
+}
+.like2{
+  margin-left: 20px;
+  padding: 10px;
+}
+.like3{
+  padding: 10px;
+}
+.con{
+ margin-top: 20px;
+}
+.mainlike{
+  margin-top: 40px;
+  font-weight: bold;
+  font-size: 3em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.footer{
+  background-color: black;
   color: white;
+  text-align: center;
+  margin-top: 30px;
+ }
+.foot{
+  padding:10px;
+ }
+
+#event{
+  color: red;
+  font-family: sans-serif;
+  font-size: 1.5em;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+@media only screen and (max-width: 550px){
+  .like{
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr .4fr .2fr ;
+    grid-template-areas: 
+    "likeA"
+    "like2"
+    "like3";
+
+  }
+  .like3{
+  text-align: center;
+
+  }
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
