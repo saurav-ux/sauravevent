@@ -8,9 +8,10 @@ In the project directory, you can run:
 
 ## Features
 
- -Add Events
- -See added events
- -Responsive
+ - Add Events
+ - See added events
+ - Responsive
+ - Like/Unlike Buttons
  
 #snapshots
 
