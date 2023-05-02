@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 function Addevent(props) {
-    // const [ename,setEname] = useState("");
+   
     const [userEvent,setUserEvent] = useState({
         eventname : "",
         location : "",
@@ -11,20 +11,21 @@ function Addevent(props) {
    
     const handleinput = (e)=>{     
        const val = e.target.value
-    //     // console.log(val);
        const nam = e.target.name;
-    //     console.log(nam);
+  
+     // for updating text
     setUserEvent({...userEvent,[nam]:val})
     }
     function submit(e){
         e.preventDefault()
-        // console.log(userEvent.time)
+        // giving data to parent component
         props.addEventt(userEvent.eventname,userEvent.location,userEvent.date,userEvent.time)
+        // reset the data
         setUserEvent({eventname : "",
         location : "",
         date: "",
         time: ""})
-        // setEname("")
+       
     }
   return (
     <div className='container'>
